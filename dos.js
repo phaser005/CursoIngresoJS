@@ -1,10 +1,9 @@
 function Mostrar()
 {
-  var input, importeFinal;
-
-  input = prompt("Ingrese importe");
- // document.getElementById("importeFinal").value = input;  ESTA LINEA ESTA DE MAS - ANALIZAR DESPUES//
-  importeFinal = input * 1.21;
-  document.getElementById("importeFinal").value = importeFinal;
+  var input, final;
+  input = prompt("Ingrese un valor:"); //tomamos el valor desde un prompt//
+  input = parseInt(input);
+  final = input * 1.21;
+  document.getElementById("importeFinal").value = final; //sobreescribimos el valor del ID por el valor introducido anteriormente//
 
 }
