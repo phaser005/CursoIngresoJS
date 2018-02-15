@@ -21,7 +21,7 @@ num2 = prompt("Ingrese numero 2");
     }
 
 
-//    if (num1 == num2) {                       Otra forma de escribir el codigo if-else-if-else
+//    if (num1 == num2) {                       Otra forma de escribir el codigo if-else-if-else+
 //        resultado = num1 * num2;
 //        document.write(resultado);
 //    } else if (num1 > num2) {

@@ -2,7 +2,7 @@ function Mostrar()
 {
 	//Genero el número RANDOM entre 1 y 10 
 	var randomNumber;
-	randomNumber = (Math.random()*10);
+	randomNumber = (Math.random()*(11 - 1) +1);
 	randomNumber = parseInt(randomNumber);
 
 if (randomNumber==9 || randomNumber==10) {
