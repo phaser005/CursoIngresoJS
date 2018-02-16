@@ -14,7 +14,7 @@ function CalcularPrecio ()
     cantidad = document.getElementById("Cantidad").value;
     marca = document.getElementById("Marca").value;
     pBruto = cantidad *35;
-        pDescuento = parseInt(pDescuento);
+    
 
 if (cantidad>=6) {
     pDescuento = pBruto*0.5
