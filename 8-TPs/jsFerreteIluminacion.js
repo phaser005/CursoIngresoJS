@@ -10,14 +10,14 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
-    var cantidad, marca, pDescuento;
+    var cantidad, marca, pDescuento, pBruto;
     cantidad = document.getElementById("Cantidad").value;
     marca = document.getElementById("Marca").value;
+    pBruto = cantidad *35;
         pDescuento = parseInt(pDescuento);
 
 if (cantidad>=6) {
-    pDescuento = (35*cantidad)*0.5
-    document.getElementById("precioDescuento").value = pDescuento;
+    pDescuento = pBruto*0.5
     if (pDescuento>120) {
         pDescuento = pDescuento*1.10;
         alert("IIBB Usted pago :" + pDescuento);
@@ -28,12 +28,11 @@ if (cantidad==5) {
     switch (marca) {
         case "ArgentinaLuz":
             pDescuento = (35* cantidad)*0.60;
-            document.getElementById("precioDescuento").value = pDescuento;
+
             break;
     
         default:
-            pDescuento = (35*cantidad)*0.7;
-            document.getElementById("precioDescuento").value = pDescuento;  
+            pDescuento = pBruto*0.7;
             break;
     }
 }
@@ -42,13 +41,11 @@ if (cantidad==4) {
     switch (marca) {
         case "ArgentinaLuz":
         case "FelipeLamparas":
-            pDescuento = (35*cantidad)*0.75;
-            document.getElementById("precioDescuento").value = pDescuento;    
+            pDescuento = pBruto*0.75;
             break;
     
         default:
-            pDescuento = (35*cantidad)*0.8;
-            document.getElementById("precioDescuento").value = pDescuento;
+            pDescuento = pBruto*0.8;
             break;
     }
 }
@@ -56,20 +53,22 @@ if (cantidad==4) {
 if (cantidad == 3) {
     switch (marca) {
         case "ArgentinaLuz":
-            pDescuento = (35*cantidad)*0.75;
-            document.getElementById("precioDescuento").value = pDescuento; 
+            pDescuento = pBruto*0.75;
             break;
         
         case "FelipeLamparas":
-            pDescuento = (35*cantidad)*0.9;
-            document.getElementById("precioDescuento").value = pDescuento; 
+            pDescuento = pBruto*0.9;
             break;
     
         default:
-            pDescuento = (35*cantidad)*0.95;
-            document.getElementById("precioDescuento").value = pDescuento;
+            pDescuento = pBruto*0.95;
             break;
     }
 }
 
+if (cantidad>0 && cantidad<3) {
+    pDescuento = (35* cantidad)*1;
+        
+}
+document.getElementById("precioDescuento").value = pDescuento;
 }
