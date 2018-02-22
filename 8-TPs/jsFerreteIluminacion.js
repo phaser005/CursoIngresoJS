@@ -72,3 +72,46 @@ if (cantidad>0 && cantidad<3) {
 }
 document.getElementById("precioDescuento").value = pDescuento;
 }
+
+//OTRA FORMA DE RESOLVER ESTE TP
+//{
+//var cant, marca, desc, importe, impFinal;
+//    cant = parseInt(cant);
+//    impote = cant*35;
+//
+//if (cant > 6) {
+//        desc = importe *0.5;
+///    
+//} else if (cant == 5 && marca =="ArgentinaLuz") {
+//        desc = impote *0.4;
+//} else if (cant == 5) {
+//        desc = importe *0.5;
+//
+//} else if (cant == 4) {
+//        if (maca =="ArgentinaLuz" || marca == "FelipeLamparas") {
+//                desc = importe *0.25;
+//        } else {
+//               desc = impote *0.2; 
+//        }
+// } else if (cant == 3) {
+//         switch (marca) {
+//             case "ArgentinaLuz":
+//                 desc = importe *0.15;
+//                 break;
+//             case "FelipeLamparas":
+//                 desc = importe *0.1;
+//             default:
+//                 desc = importe *0.05
+//         }
+// }{
+
+// impFinal = importe - desc;
+// if (impFinal > 120) {
+//     impFinal = impFinal *1.1;
+//         alert ("blabla");
+// } else {
+//     alert ("...");
+// }
+//
+// }
+//}
