@@ -14,7 +14,7 @@ function Mostrar()
 	{
 		contador++;
 		num=prompt("Ingrese numero");
-		num=parseInt("numero");
+		num=parseInt(num);
 				while (isNaN(num)) 			//con esto nos aseguramos que no estamos ingresando un valo NaN
 				{
 					num=prompt("Ingrese numero 2");

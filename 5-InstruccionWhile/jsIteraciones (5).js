@@ -4,7 +4,7 @@ function Mostrar()
 var sexo;
 sexo = prompt("ingrese f ó m .");
 
-while (sexo!="f" && sexo!="m") //otra forma seria while ((sexo!="f" && sexo!="m") && sexo!=null)
+while (sexo!="f" && sexo!="m") 
     {
         if (sexo==null) 
         {
