@@ -19,12 +19,12 @@ if (numeroUno>numeroDos && numeroUno>numeroTres)
     }else if (numeroDos>numeroTres && numeroDos>numeroUno) 
         {
             numeroMayor=numeroDos+" Segundo numero ingresado";
-        }else if //(numeroTres>numeroUno && numeroTres>numeroDos) 
-           // {
-           //     numeroMayor=numeroTres+" Tercer numero ingresado";
-          //  }else {
-          //      numeroMayor=numeroUno+" Los 3 numeros ingresados son iguales"
-         //   }
+        }else if (numeroTres>numeroUno && numeroTres>numeroDos) 
+            {
+                numeroMayor=numeroTres+" Tercer numero ingresado";
+            }else {
+                numeroMayor=numeroUno+" Los 3 numeros ingresados son iguales"
+            }
 
 
     alert("El mayor numero ingresado es: "+numeroMayor);
